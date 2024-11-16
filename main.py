@@ -20,19 +20,7 @@ def home():
 
     st.write("Script & Key Status")
 
-    try:
-        # Download the file from the URL
-        response = requests.get(url)
-        response.raise_for_status()  # Check for HTTP errors
-        # Read the .docx file using python-docx
-        doc = Document(BytesIO(response.content))
-        text = "\n".join([para.text for para in doc.paragraphs])
-        return text
-    except Exception as e:
-        return f"Error reading file: {e}"
-
-
-
+    
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
 
