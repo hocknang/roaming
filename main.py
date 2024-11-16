@@ -4,12 +4,22 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import streamlit as st
 
+def home():
+    
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
 
-    st.title("This is a title")
-    st.title("_Streamlit_ is :blue[cool] :sunglasses:")
+    st.write("Please enter your password:")
+
+    password = ""
+
+    password = st.text_input("Password", type="password")
+    if st.secrets["PASSWORD"] == password:
+        st.success("Valid Credential")
+        home()
+    else:
+        st.error("Invalid Password")
 
 
 # Press the green button in the gutter to run the script.
