@@ -13,19 +13,7 @@ def home():
 
     print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG")
 
-    st.write("Script & Key Status")
-
-    st.write("Page 1")
-
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Script%20for%20Ideafest%20as%20of%2015%20Nov%202024_Page_1.jpg")
-
-    st.write("Page 2")
-
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Script%20for%20Ideafest%20as%20of%2015%20Nov%202024_Page_2.jpg")
-
-    st.write("Page 3")
-
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Script%20for%20Ideafest%20as%20of%2015%20Nov%202024_Page_3.jpg")
+    
 
 
 
