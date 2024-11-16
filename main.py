@@ -5,6 +5,10 @@
 import streamlit as st
 
 def home():
+    st.write("QR Code")
+
+    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/QR.JPG")
+
     st.write("Presentation Slide")
 
     print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG")
