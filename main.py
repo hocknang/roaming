@@ -7,7 +7,7 @@ import streamlit as st
 def home():
     st.write("Presentation Slide")
 
-    
+    st.image("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG")
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
