@@ -3,6 +3,9 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import streamlit as st
+from docx import Document
+import requests
+from io import BytesIO
 
 def home():
     st.write("Presentation Slide")
@@ -14,6 +17,19 @@ def home():
 
     # Display the image using `st.markdown`
     st.markdown(html_string, unsafe_allow_html=True)
+
+    st.write("Script & Key Status")
+
+    try:
+        # Download the file from the URL
+        response = requests.get(url)
+        response.raise_for_status()  # Check for HTTP errors
+        # Read the .docx file using python-docx
+        doc = Document(BytesIO(response.content))
+        text = "\n".join([para.text for para in doc.paragraphs])
+        return text
+    except Exception as e:
+        return f"Error reading file: {e}"
 
 
 
