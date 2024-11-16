@@ -17,6 +17,8 @@ def home():
 
     st.write("Script & Key Status")
 
+    st.write("Page 1")
+
     image_path1 = 'https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Script%20for%20Ideafest%20as%20of%2015%20Nov%202024_Page_1.jpg'
 
     # Define the HTML hyperlink with the image
@@ -24,6 +26,8 @@ def home():
 
     # Display the image using `st.markdown`
     st.markdown(html_string, unsafe_allow_html=True)
+
+    st.write("Page 2")
 
     image_path2 = 'https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Script%20for%20Ideafest%20as%20of%2015%20Nov%202024_Page_2.jpg'
 
@@ -33,6 +37,12 @@ def home():
     # Display the image using `st.markdown`
     st.markdown(html_string, unsafe_allow_html=True)
 
+    st.write("Page 3")
+
+    image_path3 = 'https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Script%20for%20Ideafest%20as%20of%2015%20Nov%202024_Page_3.jpg'
+
+    # Define the HTML hyperlink with the image
+    html_string = f'<a href="{image_path3}" target="_blank"><img src="{image_path3}" caption="legend"></a>'
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
