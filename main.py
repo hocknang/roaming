@@ -15,7 +15,7 @@ def home():
     # Display the image using `st.markdown`
     st.markdown(html_string, unsafe_allow_html=True)
 
-    
+
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
