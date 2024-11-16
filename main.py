@@ -7,8 +7,6 @@ import streamlit as st
 def home():
     st.write("QR Code")
 
-    st.write(st.secrets["QRCODE"])
-
     print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/QR.JPG")
 
     st.write("Presentation Slide")
