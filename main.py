@@ -3,9 +3,6 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import streamlit as st
-from docx import Document
-import requests
-from io import BytesIO
 
 def home():
     st.write("Presentation Slide")
@@ -20,7 +17,7 @@ def home():
 
     st.write("Script & Key Status")
 
-    
+
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
 
