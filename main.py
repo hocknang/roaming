@@ -13,7 +13,11 @@ def home():
 
     print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG")
 
-    
+    st.write("Key stats")
+
+    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/key%20stats.jpeg")
+
+
 
 
 
