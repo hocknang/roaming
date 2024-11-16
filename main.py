@@ -7,7 +7,13 @@ import streamlit as st
 def home():
     st.write("Presentation Slide")
 
-    st.image("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG")
+    image_path = 'https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG'
+
+    # Define the HTML hyperlink with the image
+    html_string = f'<a href="{image_path}" target="_blank"><img src="{image_path}" width="200" caption="legend"></a>'
+
+    # Display the image using `st.markdown`
+    st.markdown(html_string, unsafe_allow_html=True)
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
