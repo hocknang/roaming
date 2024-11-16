@@ -10,7 +10,7 @@ def home():
     image_path = 'https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG'
 
     # Define the HTML hyperlink with the image
-    html_string = f'<a href="{image_path}" target="_blank"><img src="{image_path}" width="200" caption="legend"></a>'
+    html_string = f'<a href="{image_path}" target="_blank"><img src="{image_path}" caption="legend"></a>'
 
     # Display the image using `st.markdown`
     st.markdown(html_string, unsafe_allow_html=True)
