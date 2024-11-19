@@ -7,12 +7,8 @@ import streamlit as st
 def home():
     st.title("Website Embedding in Streamlit")
 
-    # Embed a website using an iframe
-    url = "https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4"  # Replace with the URL you want to embed
-    st.components.v1.iframe(url, width=800, height=600, scrolling=True)
-
-    # Optional: Add some additional content
-    st.write("This is an embedded website. You can explore it directly here!")
+    st.title("Open a Web Page")
+    st.markdown("[Visit Example Website](https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4)", unsafe_allow_html=True)
 
 
 
