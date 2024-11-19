@@ -5,16 +5,8 @@
 import streamlit as st
 
 def home():
-    
-    if st.button('Go to Yahoo'):
-        # JavaScript to change the URL (redirect)
-        redirect_script = """
-        <script type="text/javascript">
-            window.location.replace('https://www.yahoo.com');
-        </script>
-        """
-        # Display the script to redirect using st.markdown
-        st.markdown(redirect_script, unsafe_allow_html=True)
+    st.markdown('Please <a href="https://happylife.streamlit.app/?embed=true" target="_self">click</a>',
+                unsafe_allow_html=True)
 
 def print(image_path):
     # Define the HTML hyperlink with the image
