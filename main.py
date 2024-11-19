@@ -6,13 +6,22 @@ import streamlit as st
 
 def home():
     html_code = """
-        <script type="text/javascript">
-            window.onload = function () {
-                setTimeout(function () {
-                    window.scrollTo(0, 1);  // Scroll a little to hide the address bar on mobile
-                }, 0);
-            }
-        </script>
+        <html>
+<body>
+
+<h2>Redirect to a Webpage</h2>
+<p>The replace() method replaces the current document with a new one:</p>
+
+<button onclick="myFunction()">Replace document</button>
+
+<script>
+function myFunction() {
+  location.replace("https://www.w3schools.com")
+}
+</script>
+
+</body>
+</html> 
     """
 
     # Display the JavaScript
