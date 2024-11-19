@@ -10,6 +10,12 @@ def home():
     # Display a hyperlink
     st.markdown("[Visit OpenAI](https://www.openai.com)", unsafe_allow_html=True)
 
+    st.title("Open a New Website")
+
+    # Button to open a link
+    if st.button("Go to OpenAI"):
+        st.write("Click the link below to visit OpenAI:")
+        st.markdown("[Open OpenAI](https://www.openai.com)", unsafe_allow_html=True)
 
 def print(image_path):
     # Define the HTML hyperlink with the image
