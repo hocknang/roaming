@@ -5,17 +5,10 @@
 import streamlit as st
 
 def home():
+    st.title("Open a New Website")
 
-    st.title("Open Website")
-
-    if st.button("Click to Proceed"):
-        st.markdown("""
-            <script>
-            window.open('', '_blank').location.href = 'https://www.example.com';
-            </script>
-            """, unsafe_allow_html=True)
-
-
+    # Display a hyperlink
+    st.markdown("[Visit OpenAI](https://www.openai.com)", unsafe_allow_html=True)
 
 
 def print(image_path):
