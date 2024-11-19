@@ -5,23 +5,18 @@
 import streamlit as st
 
 def home():
-    html_code = """
-        <html>
-<body>
+    st.title("Streamlit Redirect to Yahoo")
 
- <button id="myButton">Click me to trigger JavaScript</button>
-    <script type="text/javascript">
-        document.getElementById("myButton").onclick = function() {
-            alert("Button clicked! You can trigger any JavaScript here.");
-        }
-    </script>
-
-</body>
-</html> 
-    """
-
-    # Display the JavaScript
-    st.markdown(html_code, unsafe_allow_html=True)
+    # Add a button
+    if st.button('Go to Yahoo'):
+        # JavaScript for redirection
+        redirect_script = """
+        <script type="text/javascript">
+            window.location.href = 'https://www.yahoo.com';
+        </script>
+        """
+        # Display the redirection script using st.markdown
+        st.markdown(redirect_script, unsafe_allow_html=True)
 
 def print(image_path):
     # Define the HTML hyperlink with the image
