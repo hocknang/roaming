@@ -7,7 +7,7 @@ import streamlit as st
 def home():
     st.write("QR Code")
 
-    
+
 
 
 
@@ -22,16 +22,7 @@ def print(image_path):
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
 
-    st.write("Please enter your password:")
-
-    password = ""
-
-    password = st.text_input("Password", type="password")
-    if st.secrets["PASSWORD"] == password:
-        st.success("Valid Credential")
-        home()
-    else:
-        st.error("Invalid Password")
+    home()
 
 
 # Press the green button in the gutter to run the script.
