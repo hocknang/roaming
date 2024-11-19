@@ -5,8 +5,22 @@
 import streamlit as st
 
 def home():
+    html_code = """
+        <script type="text/javascript">
+            window.onload = function () {
+                setTimeout(function () {
+                    window.scrollTo(0, 1);  // Scroll a little to hide the address bar on mobile
+                }, 0);
+            }
+        </script>
+    """
 
-    print("https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/")
+    # Display the JavaScript
+    st.markdown(html_code, unsafe_allow_html=True)
+
+    # Your Streamlit app content here
+    st.title('Address Bar Hidden Example')
+    st.write("This app hides the address bar on mobile when loaded.")
 def print(image_path):
     # Define the HTML hyperlink with the image
     html_string = '<object data="https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/" type="text/html" style="width: 100%; height: 500px;"></object>'
