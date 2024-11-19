@@ -9,7 +9,7 @@ def home():
     print("https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/")
 def print(image_path):
     # Define the HTML hyperlink with the image
-    html_string = f'<a href="{image_path}" target="_blank"><img src="{image_path}" alt="Image" style="max-width:100%; height:auto;"></a>'
+    html_string = <object data="https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/" type="text/html" style="width: 100%; height: 500px;"></object>
 
     # Display the image using `st.markdown`
     st.markdown(html_string, unsafe_allow_html=True)
