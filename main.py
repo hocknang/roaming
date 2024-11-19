@@ -5,8 +5,8 @@
 import streamlit as st
 
 def home():
-    target_url = "https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/"
-    st.markdown("[Visit Plumber.gov.sg](https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/)")
+
+    print("https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/")
 def print(image_path):
     # Define the HTML hyperlink with the image
     html_string = f'<a href="{image_path}" target="_blank"><img src="{image_path}" caption="legend"></a>'
