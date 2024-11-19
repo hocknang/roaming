@@ -5,17 +5,15 @@
 import streamlit as st
 
 def home():
-    st.title("Streamlit Redirect to Yahoo")
-
-    # Add a button
+    
     if st.button('Go to Yahoo'):
-        # JavaScript for redirection
+        # JavaScript to change the URL (redirect)
         redirect_script = """
         <script type="text/javascript">
-            window.location.href = 'https://www.yahoo.com';
+            window.location.replace('https://www.yahoo.com');
         </script>
         """
-        # Display the redirection script using st.markdown
+        # Display the script to redirect using st.markdown
         st.markdown(redirect_script, unsafe_allow_html=True)
 
 def print(image_path):
