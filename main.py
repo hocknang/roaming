@@ -6,10 +6,7 @@ import streamlit as st
 
 def home():
     target_url = "https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/"
-
-
-    st.markdown('<a href=https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/ target="_self">...</a>', unsafe_allow_html=True)
-
+    st.markdown("[Visit Plumber.gov.sg](https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/)")
 def print(image_path):
     # Define the HTML hyperlink with the image
     html_string = f'<a href="{image_path}" target="_blank"><img src="{image_path}" caption="legend"></a>'
@@ -21,7 +18,7 @@ def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
 
     home()
-
+s
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
