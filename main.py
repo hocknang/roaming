@@ -5,17 +5,19 @@
 import streamlit as st
 
 def home():
-    st.title("Open a New Website")
-
-    # Display a hyperlink
-    st.markdown("[Visit OpenAI](https://www.openai.com)", unsafe_allow_html=True)
-
-    st.title("Open a New Website")
-
-    # Button to open a link
-    if st.button("Go to OpenAI"):
-        st.write("Click the link below to visit OpenAI:")
-        st.markdown("[Open OpenAI](https://www.openai.com)", unsafe_allow_html=True)
+    target_url = "https://plumber.gov.sg/tiles/9c5aeb0f-1db2-4a3a-a615-a2ea829ebfee/54f8b9b9-0bf1-4fe1-96e9-53091aab8eb4/"
+    st.markdown(f"""
+        <html>
+            <head>
+                <script type="text/javascript">
+                    window.location.href = "{target_url}";
+                </script>
+            </head>
+            <body>
+                Redirecting...
+            </body>
+        </html>
+        """, unsafe_allow_html=True)
 
 def print(image_path):
     # Define the HTML hyperlink with the image
