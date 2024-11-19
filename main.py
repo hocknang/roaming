@@ -5,14 +5,13 @@
 import streamlit as st
 
 def home():
-    st.title("Open Hidden Website")
 
-    # Add a button to open a website
+    st.title("Open Website")
+
     if st.button("Click to Proceed"):
-        # Redirect the user with a hidden URL
         st.markdown("""
             <script>
-            window.location.href = "https://www.example.com";
+            window.open('', '_blank').location.href = 'https://www.example.com';
             </script>
             """, unsafe_allow_html=True)
 
