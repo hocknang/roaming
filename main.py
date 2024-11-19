@@ -7,24 +7,7 @@ import streamlit as st
 def home():
     st.write("QR Code")
 
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/QR.JPG")
-
-    st.write("Presentation Slide")
-
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Slide1.JPG")
-
-    st.write("Script (Page 1)")
-
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Roaming%20Presenter%20Script%20updated_Page_1.jpg")
-
-    st.write("Script (Page 2)")
-
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/Roaming%20Presenter%20Script%20updated_Page_2.jpg")
-
-    st.write("Key stats")
-
-    print("https://raw.githubusercontent.com/hocknang/roaming/refs/heads/master/resource/key%20stats.jpeg")
-
+    
 
 
 
