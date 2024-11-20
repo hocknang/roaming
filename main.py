@@ -3,10 +3,21 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import streamlit as st
+import requests
 
 def home():
-    st.markdown('Please <a href="https://happylife.streamlit.app/?embed=true" target="_self">click</a>',
-                unsafe_allow_html=True)
+    # URL to connect to
+    url = "https://example.com"
+
+    # Connect and fetch the response
+    response = requests.get(url)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        print("Connection successful!")
+        print(response.text)  # Print the HTML content
+    else:
+        print(f"Failed to connect. Status code: {response.status_code}")
 
 def print(image_path):
     # Define the HTML hyperlink with the image
